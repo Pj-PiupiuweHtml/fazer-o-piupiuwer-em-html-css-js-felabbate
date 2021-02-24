@@ -85,7 +85,11 @@ img {
 }
 
 #card-recommended {
-    margin: 32px 0 0 0;
+    margin-top: 32px;
+}
+
+#com-recommended {
+    margin-top: 32px;
 }
 
 /* CLASS */
@@ -107,6 +111,12 @@ img {
 .general-name {
     font-size: 20px;
     font-weight: bold;
+}
+
+.generic-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
 }
 
 .content {
@@ -141,6 +151,7 @@ img {
     max-width: 86px;
     max-height: 86px;
     list-style: none;
+    margin-bottom: 16px;
 }
 
 .ppl-recommended {
@@ -150,6 +161,19 @@ img {
 
 .box-recommended {
     width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-recommended {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-community {
+    padding-left: 8px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* BREAKPOINT */
