@@ -29,7 +29,7 @@ img {
 #main-header {
     padding: 8px 32px;
     max-width: 100vw;
-    height: 76px;
+    height: 64px;
     background-color: #571228;
 }
 
@@ -39,12 +39,12 @@ img {
 }
 
 #main-header nav ul img {
-    min-width: 60px;
-    min-height: 60px;
+    min-width: 48px;
+    min-height: 48px;
 }
 
 #main-header nav ul li {
-    margin-left: 44px;
+    margin-left: 32px;
 }
 
 #main-header nav ul:first-child {
@@ -74,7 +74,7 @@ img {
 }
 
 #ranking li p {
-    padding: 5px 0 0 8px;
+    padding: 5px 0 8px 8px;
     font-size: 18px;
 }
 
@@ -84,9 +84,30 @@ img {
     font-size: 24px;
 }
 
+#card-recommended {
+    margin: 32px 0 0 0;
+}
+
 /* CLASS */
 /* CLASS */
 /* CLASS */
+
+.follow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #3A4E48;
+    border-radius: 8px;
+    padding: 1.5px 16px;
+
+    color: #571228;
+}
+
+.general-name {
+    font-size: 20px;
+    font-weight: bold;
+}
 
 .content {
     max-width: 1920px;
@@ -114,6 +135,21 @@ img {
     padding: 16px;
     border-radius: 8px;
     border: 1px #454545 solid;
+}
+
+.avatar {
+    max-width: 86px;
+    max-height: 86px;
+    list-style: none;
+}
+
+.ppl-recommended {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-recommended {
+    width: 200px;
 }
 
 /* BREAKPOINT */
