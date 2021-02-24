@@ -76,6 +76,26 @@ img {
     justify-content: space-between;
 }
 
+.wrapper-content {
+    margin: 32px;
+    display: flex;
+}
+
+.sidebar {
+    max-width: 360px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px #454545 solid;
+}
+
+div.card ul {
+    margin: 16px;
+}
+
 /* BREAKPOINT */
 /* BREAKPOINT */
 /* BREAKPOINT */
