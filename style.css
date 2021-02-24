@@ -29,7 +29,7 @@ img {
 #main-header {
     padding: 8px 32px;
     max-width: 100vw;
-    height: 76px;
+    height: 64px;
     background-color: #571228;
 }
 
@@ -39,12 +39,12 @@ img {
 }
 
 #main-header nav ul img {
-    min-width: 60px;
-    min-height: 60px;
+    min-width: 40px;
+    min-height: 40px;
 }
 
 #main-header nav ul li {
-    margin-left: 44px;
+    margin-left: 32px;
 }
 
 #main-header nav ul:first-child {
@@ -74,19 +74,39 @@ img {
 }
 
 #ranking li p {
-    padding: 5px 0 0 8px;
-    font-size: 18px;
+    padding: 5px 0 8px 8px;
 }
 
 #ranking li::before {
     content: counter(ranking-counter) ". ";
     color: #571228;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 /* CLASS */
 /* CLASS */
 /* CLASS */
+
+.generic-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.generic-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.generic-username {
+    font-size: 14px;
+}
+
+.follow {
+    border-radius: 8px;
+    width: 50%;
+    border: 1px solid #3A4E48;
+    color: #571228;
+}
 
 .content {
     max-width: 1920px;
@@ -114,6 +134,46 @@ img {
     padding: 16px;
     border-radius: 8px;
     border: 1px #454545 solid;
+}
+
+.people {
+    margin-top: 32px;
+}
+
+.communities {
+    margin-top: 32px;
+}
+
+.person-recommended {
+    margin-top: 16px;
+    display: flex;
+}
+
+.person-info {
+    padding-left: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name-username {
+    display: flex;
+}
+
+.name-username p.generic-name {
+    padding-right: 8px;
+}
+
+.com-recommended {
+    display: flex;
+    margin-top: 16px;
+}
+
+.com-info {
+    padding-left: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 /* BREAKPOINT */
