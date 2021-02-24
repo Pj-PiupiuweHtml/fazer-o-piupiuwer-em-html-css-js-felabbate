@@ -74,13 +74,43 @@ img {
 }
 
 #ranking li p {
-    padding: 5px 0 8px 8px;
+    padding: 5px 0 5px 8px;
 }
 
 #ranking li::before {
     content: counter(ranking-counter) ". ";
     color: #571228;
     font-size: 20px;
+}
+
+/* FEED */
+
+#avatar-input {
+    display: flex;
+}
+
+#avatar-input input {
+    flex: 1;
+    margin-left: 8px;
+    padding-left: 8px;
+    padding-bottom: 50px;
+    
+    border-radius: 8px;
+    border: 1px solid #571228;
+}
+
+#input-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0 0 86px;
+}
+
+#input-buttons button {
+    width: 10%;
+}
+
+#piu-input-extras {
+    display: flex;
 }
 
 /* CLASS */
@@ -99,6 +129,7 @@ img {
 
 .generic-username {
     font-size: 14px;
+    font-weight: lighter;
 }
 
 .follow {
@@ -174,6 +205,11 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.feed {
+    flex: 1;
+    margin-left: 32px;
 }
 
 /* BREAKPOINT */
