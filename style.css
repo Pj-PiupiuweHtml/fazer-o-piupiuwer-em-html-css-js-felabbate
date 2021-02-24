@@ -157,6 +157,7 @@ img {
 .ppl-recommended {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 16px;
 }
 
 .box-recommended {
@@ -166,6 +167,7 @@ img {
 }
 
 .list-recommended {
+    width: 300px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -173,7 +175,7 @@ img {
 .box-community {
     padding-left: 8px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 /* BREAKPOINT */
