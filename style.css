@@ -117,6 +117,7 @@ img {
     display: flex;
 }
 
+
 /* CLASS */
 /* CLASS */
 /* CLASS */
@@ -214,6 +215,71 @@ img {
 .feed {
     flex: 1;
     margin-left: 32px;
+}
+
+.timeline {
+    margin-top: 32px;
+}
+
+.timeline-header {
+    display: flex;
+    color: #571228;
+    margin-left: 6px;
+}
+
+.timeline-header .card {
+    padding: 4px 8px;
+    border-radius: 8px 8px 0 0;
+}
+
+
+.timeline-content {
+    margin-top: -1px;
+}
+
+.piu-content-outside {
+    display: flex;
+    flex-direction: column;
+}
+
+.piu-poster-info {
+    display: flex;
+}
+
+.piu-details {
+    padding: 0 0 32px 16px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.piu-details-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.piu-name-username {
+    display: flex;
+}
+
+.piu-name-username p.generic-name {
+    padding-right: 8px;
+}
+
+.piu-reaction-bar {
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 40px 0 40px;
+}
+
+.reaction-group {
+    display: flex;
+}
+
+.reaction-group p {
+    padding: 8px 0 0 8px;
 }
 
 /* BREAKPOINT */
