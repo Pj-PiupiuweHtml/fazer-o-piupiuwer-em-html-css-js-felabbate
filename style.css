@@ -166,7 +166,8 @@ img {
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 2px 4px 25px rgba(231, 215, 215, 0.1);
+    background-color: white;
     padding: 16px;
     border-radius: 8px;
     border: 1px #454545 solid;
