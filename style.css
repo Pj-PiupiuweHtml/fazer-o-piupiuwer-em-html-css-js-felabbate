@@ -179,6 +179,10 @@ img {
     text-decoration: underline;
 }
 
+.error-message {
+    align-items: center;
+}
+
 .people {
     margin-top: 32px;
 }
@@ -302,7 +306,7 @@ img {
 
 .reaction-text {
     color: #571228;
-}​
+}
 
 /* BREAKPOINT */
 /* BREAKPOINT */
@@ -310,7 +314,7 @@ img {
 
 @media (max-width: 899px) {
     #main-header nav ul img {
-        min-width: 45px;
-        min-height: 45px;
+        min-width: 40px;
+        min-height: 40px;
     }
 }

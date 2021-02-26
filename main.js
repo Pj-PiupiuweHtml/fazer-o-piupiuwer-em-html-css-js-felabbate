@@ -1,4 +1,4 @@
-// Função para popular o feed com os dados da API
+// Para popular o feed com os dados da API
 
 const makeRequest = async(url) => {
     try {
@@ -121,12 +121,6 @@ const makeRequest = async(url) => {
     } 
     catch (error) {
         console.log(error);
-    }
-}
-
-const cutWord = (text) => {
-    if (text.lenght >= 5) {
-        
     }
 }
 

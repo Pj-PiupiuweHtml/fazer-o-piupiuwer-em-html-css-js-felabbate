@@ -106,17 +106,20 @@
             </aside>
             <section class="feed">
                 <div class="card" id="piu-input">
-                    <div id="avatar-input">
-                        <img src="/images/avatar.svg" alt="Sua foto de perfil" />
-                        <textarea name="user-piu" maxlength="140" placeholder="O que você tem em mente?"></textarea>
-                    </div>
-                    <div id="input-buttons">
-                        <div id="piu-input-extras">
-                            <img src="/images/Pin.svg" alt="Botão de localização" />
-                            <img src="/images/Camera.svg" alt="Botão de fotos" />
+                    <span class="error-message">aaaa</span>
+                    <form action="feed.html" class="form-piu">
+                        <div id="avatar-input">
+                            <img src="/images/fotousuario.jpeg" alt="Sua foto de perfil" class="profile-picture-feed user-profile-picture" />
+                            <textarea name="userPiu" maxlength="140" placeholder="O que você tem em mente?"></textarea>
                         </div>
-                        <button class="follow">Solte o Piu</button>
-                    </div>
+                        <div id="input-buttons">
+                            <div id="piu-input-extras">
+                                <img src="/images/Pin.svg" alt="Botão de localização" />
+                                <img src="/images/Camera.svg" alt="Botão de fotos" />
+                            </div>
+                            <button class="follow submit-piu">Solte o Piu</button>
+                        </div>
+                    </form>
                 </div>
                 <div class="timeline">
                     <div class="timeline-header">
@@ -163,6 +166,7 @@
                 </div>
             </section>
         </section>
-        <script src="script.js"></script>
+        <script src="main.js"></script>
+        <script src="form.js"></script>
     </body>
 </html>
