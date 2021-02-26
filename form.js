@@ -1,12 +1,41 @@
 // Input de piu para timeline
 
-const submitButton = document.querySelector(".submit-piu");
-submitButton.addEventListener("click", function(event) {
+const errorMessageSpan = document.querySelector('.error-message')
+
+const inputValidation = () => {
+    const form = document.querySelector('.form-piu');
+
+    const piu = form.userPiu.value;
+
+    if (piu.length <= 0) {
+        return 'Não é possível enviar pius sem conteúdo!';
+    }
+    else if (piu.length > 140) {
+        return 'Não é possível enviar pius com mais de 140 caracteres!';
+    }
+    else {
+        return false;
+    }
+}
+
+const submitButton = document.querySelector('.submit-piu');
+submitButton.addEventListener('click', function(event) {
     event.preventDefault();
 
-    const form = document.querySelector(".form-piu");
+    const form = document.querySelector('.form-piu');
 
     const conteudoPiu = form.userPiu.value;
+
+    const errorMessage = inputValidation();
+
+    if (inputValidation()) {
+        errorMessageSpan.textContent = errorMessage;
+        errorMessageSpan.classList.add('card');
+        return;
+    }
+
+    errorMessageSpan.classList.remove('card');
+    errorMessageSpan.textContent = '';
 
     const timeline = document.querySelector('.timeline-content');
             
@@ -121,10 +150,4 @@ submitButton.addEventListener("click", function(event) {
     outsideDiv.appendChild(infoDiv);
     outsideDiv.appendChild(reactionDiv);
     timeline.insertBefore(outsideDiv, timeline.firstChild);
-});
-
-const inputValidation = (piu) => {
-    const form = document.querySelector(".form-piu");
-
-    const conteudoPiu = form.userPiu.value;
-}
+})

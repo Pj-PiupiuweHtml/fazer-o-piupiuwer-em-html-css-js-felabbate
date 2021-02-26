@@ -84,7 +84,7 @@
                             <img src="/images/logopj.png" alt="Imagem da comunidade" class="profile-picture-feed" />
                             <div class="com-info">
                                 <p class="generic-name">Poli Júnior</p>
-                                <p>145 Membros</p>
+                                <p>208 Membros</p>
                             </div>
                         </li>
                         <li class="com-recommended">
@@ -106,16 +106,18 @@
             </aside>
             <section class="feed">
                 <div class="card" id="piu-input">
-                    <span class="error-message">aaaa</span>
                     <form action="feed.html" class="form-piu">
                         <div id="avatar-input">
                             <img src="/images/fotousuario.jpeg" alt="Sua foto de perfil" class="profile-picture-feed user-profile-picture" />
-                            <textarea name="userPiu" maxlength="140" placeholder="O que você tem em mente?"></textarea>
+                            <textarea name="userPiu" maxlength="500" placeholder="O que você tem em mente?"></textarea>
                         </div>
                         <div id="input-buttons">
                             <div id="piu-input-extras">
                                 <img src="/images/Pin.svg" alt="Botão de localização" />
                                 <img src="/images/Camera.svg" alt="Botão de fotos" />
+                            </div>
+                            <div class="error-card">
+                                <span class="error-message"></span>
                             </div>
                             <button class="follow submit-piu">Solte o Piu</button>
                         </div>
@@ -168,5 +170,6 @@
         </section>
         <script src="main.js"></script>
         <script src="form.js"></script>
+        <script src="search.js"></script>
     </body>
 </html>
