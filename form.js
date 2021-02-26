@@ -88,6 +88,7 @@ submitButton.addEventListener('click', function(event) {
     contentDiv.classList.add('piu-content');
 
     const piuP = document.createElement('p');
+    piuP.classList.add('piu-text-content');
     piuP.textContent = conteudoPiu;
     contentDiv.appendChild(piuP);
 

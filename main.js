@@ -55,6 +55,7 @@ const makeRequest = async(url) => {
             contentDiv.classList.add('piu-content');
 
             const piuP = document.createElement('p');
+            piuP.classList.add('piu-text-content');
             piuP.textContent = item.mensagem;
             contentDiv.appendChild(piuP);
 
