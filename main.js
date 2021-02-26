@@ -30,11 +30,13 @@ const makeRequest = async(url) => {
 
             const nomeP = document.createElement('p');
             nomeP.classList.add('generic-name');
+            nomeP.classList.add('name-piu-feed');
             nomeP.textContent = item.nome;
             nameUserDiv.appendChild(nomeP);
 
             const userP = document.createElement('p');
             userP.classList.add('generic-username');
+            userP.classList.add('username-piu-feed');
             userP.textContent = item.username;
             nameUserDiv.appendChild(userP);
             topDetailsDiv.appendChild(nameUserDiv);

@@ -63,11 +63,13 @@ submitButton.addEventListener('click', function(event) {
 
     const nomeP = document.createElement('p');
     nomeP.classList.add('generic-name');
+    nomeP.classList.add('name-piu-feed');
     nomeP.textContent = "Fernando Labbate";
     nameUserDiv.appendChild(nomeP);
 
     const userP = document.createElement('p');
     userP.classList.add('generic-username');
+    userP.classList.add('username-piu-feed');
     userP.textContent = "@Felabbate";
     nameUserDiv.appendChild(userP);
     topDetailsDiv.appendChild(nameUserDiv);
