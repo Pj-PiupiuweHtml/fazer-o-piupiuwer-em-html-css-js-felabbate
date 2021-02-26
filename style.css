@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #e5e5e5;
+    background-color: whitesmoke;
     font-family: 'Lato', sans-serif;
     text-rendering: optimizeLegibility;
     max-width: 100vw;
@@ -71,10 +71,11 @@ img {
 #ranking li {
     counter-increment: ranking-counter;
     display: flex;
+    margin-bottom: 8px;
 }
 
-#ranking li p {
-    padding: 5px 0 5px 8px;
+#ranking li p {     /* GAMBIARRA: alinhamento do texto e número */
+    padding: 0.25rem 0 0 8px;
 }
 
 #ranking li::before {
@@ -139,7 +140,8 @@ img {
 
 .follow {
     border-radius: 8px;
-    width: 50%;
+    max-width: 72px;
+    height: 25px;
     border: 1px solid #3A4E48;
     color: #571228;
 }
@@ -173,6 +175,10 @@ img {
     border: 1px #454545 solid;
 }
 
+.active-header {
+    text-decoration: underline;
+}
+
 .people {
     margin-top: 32px;
 }
@@ -191,6 +197,8 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .name-username {
@@ -287,12 +295,14 @@ img {
 }
 
 .profile-picture-feed {
-    max-width: 86px;
+    width: 86px;
+    height: 86px;
+    border-radius: 8px;
 }
 
 .reaction-text {
     color: #571228;
-}
+}​
 
 /* BREAKPOINT */
 /* BREAKPOINT */

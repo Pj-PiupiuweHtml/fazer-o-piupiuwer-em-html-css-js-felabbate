@@ -39,10 +39,10 @@ const makeRequest = async(url) => {
             nameUserDiv.appendChild(userP);
             topDetailsDiv.appendChild(nameUserDiv);
 
-            const comP = document.createElement('p');
+            /* const comP = document.createElement('p');                GAMBIARRA: tem que arrumar o espaçamento para ficar o mesmo em todos os pius
             comP.classList.add('generic-username');
             comP.textContent = '(comunidade)';
-            topDetailsDiv.appendChild(comP);
+            topDetailsDiv.appendChild(comP); */
 
             const timeP = document.createElement('p');
             timeP.classList.add('generic-username');
@@ -118,8 +118,15 @@ const makeRequest = async(url) => {
             outsideDiv.appendChild(reactionDiv);
             timeline.appendChild(outsideDiv);
         });
-    } catch (error) {
+    } 
+    catch (error) {
         console.log(error);
+    }
+}
+
+const cutWord = (text) => {
+    if (text.lenght >= 5) {
+        
     }
 }
 
