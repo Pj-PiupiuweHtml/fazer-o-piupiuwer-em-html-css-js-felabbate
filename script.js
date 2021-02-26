@@ -8,7 +8,7 @@ const makeRequest = async(url) => {
             const timeline = document.querySelector('.timeline-content');
             
             const outsideDiv = document.createElement('div');
-            outsideDiv.classList.add('piu-content-ouside');
+            outsideDiv.classList.add('piu-content-outside');
 
             const infoDiv = document.createElement('div');
             infoDiv.classList.add('piu-poster-info');
@@ -110,7 +110,7 @@ const makeRequest = async(url) => {
             reactionDiv.appendChild(salvarPiu);
         
             const showCom = document.createElement('p');
-            showCom.id = 'reaction-text';
+            showCom.classList.add('reaction-text');
             showCom.textContent = 'Mostrar Conversa';
             reactionDiv.appendChild(showCom);
 
@@ -118,8 +118,7 @@ const makeRequest = async(url) => {
             outsideDiv.appendChild(reactionDiv);
             timeline.appendChild(outsideDiv);
         });
-    }
-    catch (error) {
+    } catch (error) {
         console.log(error);
     }
 }

@@ -238,9 +238,12 @@ img {
     margin-top: -1px;
 }
 
-.piu-content-outside {
+.piu-content-outside {  /* GAMBIARRA: achar um jeito melhor pra fazer a divisoria entre pius */
     display: flex;
     flex-direction: column;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: #454545 thin solid;
 }
 
 .piu-poster-info {
@@ -285,6 +288,10 @@ img {
 
 .profile-picture-feed {
     max-width: 86px;
+}
+
+.reaction-text {
+    color: #571228;
 }
 
 /* BREAKPOINT */
