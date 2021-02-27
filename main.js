@@ -74,10 +74,11 @@ const makeRequest = async(url) => {
             const likeButton = document.createElement('img');
             likeButton.src = 'images/Favorite.svg';
             likeButton.alt = 'Curtir';
+            likeButton.classList.add('btnFavorite');
             reactionGroupDiv.appendChild(likeButton);
         
             const likeNum = document.createElement('p');
-            likeNum.textContent = 'X';
+            likeNum.textContent = parseInt(10*Math.random());
             reactionGroupDiv.appendChild(likeNum);
             reactionDiv.appendChild(reactionGroupDiv);
         
@@ -121,7 +122,8 @@ const makeRequest = async(url) => {
             outsideDiv.appendChild(reactionDiv);
             timeline.appendChild(outsideDiv);
         });
-    } 
+        handleFavorite();
+    }
     catch (error) {
         console.log(error);
     }

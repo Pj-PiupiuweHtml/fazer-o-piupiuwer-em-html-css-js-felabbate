@@ -107,6 +107,7 @@ submitButton.addEventListener('click', function(event) {
     const likeButton = document.createElement('img');
     likeButton.src = 'images/Favorite.svg';
     likeButton.alt = 'Curtir';
+    likeButton.classList.add('btnFavorite');
     reactionGroupDiv.appendChild(likeButton);
 
     const likeNum = document.createElement('p');
@@ -153,4 +154,6 @@ submitButton.addEventListener('click', function(event) {
     outsideDiv.appendChild(infoDiv);
     outsideDiv.appendChild(reactionDiv);
     timeline.insertBefore(outsideDiv, timeline.firstChild);
+
+    handleFavorite();
 })
