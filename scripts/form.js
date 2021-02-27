@@ -68,7 +68,6 @@ submitButton.addEventListener("click", function(event) {
 
     const userP = document.createElement("p");
     userP.classList.add("generic-username");
-    userP.classList.add("username-piu-feed");
     userP.textContent="@Felabbate";
     nameUserDiv.appendChild(userP);
     topDetailsDiv.appendChild(nameUserDiv);
@@ -84,10 +83,8 @@ submitButton.addEventListener("click", function(event) {
     topDetailsDiv.appendChild(timeP);
 
     const contentDiv = document.createElement("div");
-    contentDiv.classList.add("piu-content");
 
     const piuP = document.createElement("p");
-    piuP.classList.add("piu-text-content");
     piuP.textContent = conteudoPiu;
     contentDiv.appendChild(piuP);
 

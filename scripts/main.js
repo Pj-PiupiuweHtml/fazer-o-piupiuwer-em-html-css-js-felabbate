@@ -38,7 +38,6 @@ const makeRequest = async(url) => {
 
             const userP = document.createElement("p");
             userP.classList.add("generic-username");
-            userP.classList.add("username-piu-feed");
             userP.textContent = item.username;
             nameUserDiv.appendChild(userP);
             topDetailsDiv.appendChild(nameUserDiv);
@@ -54,10 +53,8 @@ const makeRequest = async(url) => {
             topDetailsDiv.appendChild(timeP);
 
             const contentDiv = document.createElement("div");
-            contentDiv.classList.add("piu-content");
 
             const piuP = document.createElement("p");
-            piuP.classList.add("piu-text-content");
             piuP.textContent = item.mensagem;
             contentDiv.appendChild(piuP);
 
