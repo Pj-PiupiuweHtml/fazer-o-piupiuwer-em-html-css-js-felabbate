@@ -86,6 +86,12 @@ img {
 
 /* FEED */
 
+#piu-input {    /* NÃO FAZ NADA ??? */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 #avatar-input {
     display: flex;
 }
@@ -186,9 +192,11 @@ img {
     color: lightcoral;
 }
 
-/* .error-card {
-    margin-top: 9px;
-} */
+.input-error {
+    background: transparent;
+    justify-content: center;
+    margin-left: 35%;
+}
 
 .people {
     margin-top: 32px;
