@@ -111,7 +111,8 @@ submitButton.addEventListener('click', function(event) {
     reactionGroupDiv.appendChild(likeButton);
 
     const likeNum = document.createElement('p');
-    likeNum.textContent = 'X';
+    likeNum.textContent = parseInt(10*Math.random());
+    likeNum.classList.add('favorite-counter');
     reactionGroupDiv.appendChild(likeNum);
     reactionDiv.appendChild(reactionGroupDiv);
 

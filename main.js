@@ -79,6 +79,7 @@ const makeRequest = async(url) => {
         
             const likeNum = document.createElement('p');
             likeNum.textContent = parseInt(10*Math.random());
+            likeNum.classList.add('favorite-counter');
             reactionGroupDiv.appendChild(likeNum);
             reactionDiv.appendChild(reactionGroupDiv);
         

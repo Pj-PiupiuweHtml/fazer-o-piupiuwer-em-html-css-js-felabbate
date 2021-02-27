@@ -25,12 +25,13 @@ searchBar.addEventListener('input', function(){
 
 const handleFavorite = () => {
     const favImage = document.querySelectorAll('.btnFavorite');
-    console.log(favImage);
     favImage.forEach((item) => {
-        console.log('each');
-        item.addEventListener('click', () => {
+        item.addEventListener('click', (event) => {
+            let counterDiv = item.parentElement.children[1];
+            let counterValue = parseInt(counterDiv.textContent);
             item.classList.contains('toggleOff')
-            ? (item.classList.remove('toggleOff'), item.src='images/Favorite.svg')
-            : (item.classList.add('toggleOff'), item.src = 'images/Favorite_full.svg');
-        })})
+            ? (item.classList.remove('toggleOff'), item.src= 'images/Favorite.svg', counterDiv.textContent = --counterValue)
+            : (item.classList.add('toggleOff'), item.src = 'images/Favorite_full.svg', counterDiv.textContent = ++counterValue);
+        })
+    })
 }
