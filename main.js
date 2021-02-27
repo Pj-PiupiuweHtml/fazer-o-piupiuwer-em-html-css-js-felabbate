@@ -1,10 +1,13 @@
 // Para popular o feed com os dados da API
+let arrayCounter = 0;
 
 const makeRequest = async(url) => {
     try {
         const request = await fetch(url);
         const data = await request.json();
         data.forEach(item => {
+            arrayCounter++;
+
             const timeline = document.querySelector('.timeline-content');
             
             const outsideDiv = document.createElement('div');
@@ -48,7 +51,7 @@ const makeRequest = async(url) => {
 
             const timeP = document.createElement('p');
             timeP.classList.add('generic-username');
-            timeP.textContent = 'Tempo postado';
+            timeP.textContent = `${arrayCounter} min`;
             topDetailsDiv.appendChild(timeP);
 
             const contentDiv = document.createElement('div');
@@ -92,7 +95,7 @@ const makeRequest = async(url) => {
             reactionGroupDiv2.appendChild(commentButton);
         
             const commentNum = document.createElement('p');
-            commentNum.textContent = 'X';
+            commentNum.textContent = parseInt(10*Math.random());
             reactionGroupDiv2.appendChild(commentNum);
             reactionDiv.appendChild(reactionGroupDiv2);
         
@@ -105,7 +108,7 @@ const makeRequest = async(url) => {
             reactionGroupDiv3.appendChild(shareButton);
         
             const shareNum = document.createElement('p');
-            shareNum.textContent = 'X';
+            shareNum.textContent = parseInt(10*Math.random());
             reactionGroupDiv3.appendChild(shareNum);
             reactionDiv.appendChild(reactionGroupDiv3);
         

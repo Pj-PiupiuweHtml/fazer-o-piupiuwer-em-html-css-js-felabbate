@@ -81,7 +81,7 @@ submitButton.addEventListener('click', function(event) {
 
     const timeP = document.createElement('p');
     timeP.classList.add('generic-username');
-    timeP.textContent = '1s';
+    timeP.textContent = '1 s';
     topDetailsDiv.appendChild(timeP);
 
     const contentDiv = document.createElement('div');
