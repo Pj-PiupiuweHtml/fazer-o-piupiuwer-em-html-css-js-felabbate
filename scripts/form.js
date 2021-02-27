@@ -63,7 +63,6 @@ submitButton.addEventListener("click", function(event) {
 
     const nomeP = document.createElement("p");
     nomeP.classList.add("generic-name");
-    nomeP.classList.add("name-piu-feed");
     nomeP.textContent="Fernando Labbate";
     nameUserDiv.appendChild(nomeP);
 

@@ -33,7 +33,6 @@ const makeRequest = async(url) => {
 
             const nomeP = document.createElement("p");
             nomeP.classList.add("generic-name");
-            nomeP.classList.add("name-piu-feed");
             nomeP.textContent = item.nome;
             nameUserDiv.appendChild(nomeP);
 
