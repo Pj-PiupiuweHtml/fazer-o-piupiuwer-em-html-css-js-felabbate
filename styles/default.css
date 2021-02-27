@@ -57,7 +57,7 @@ textarea {
     margin-left: 32px;
 }
 
-#main-header nav ul:first-child {
+#main-header nav ul li:first-child {
     margin: 0px;
 }
 
