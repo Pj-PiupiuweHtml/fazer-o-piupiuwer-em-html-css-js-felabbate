@@ -110,7 +110,7 @@ img {
 }
 
 #input-buttons button {
-    width: 10%;
+    width: 20%;
 }
 
 #piu-input-extras {
@@ -326,8 +326,31 @@ img {
 /* BREAKPOINT */
 
 @media (max-width: 899px) {
+
     #main-header nav ul img {
-        min-width: 40px;
-        min-height: 40px;
+        min-width: 24px;
+        min-height: 24px;
+    }
+
+    #main-header nav ul li {
+        margin-left: 16px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 699px) {
+
+    #search input {
+        display: none;
+    }
+
+    #main-header {
+        padding: 8px 24px;
+        max-width: 100vw;
+        height: 64px;
+        background-color: #571228;
     }
 }
