@@ -43,6 +43,7 @@ textarea {
 }
 
 #main-header nav ul {
+    border: 1px solid black;
     display: flex;
     list-style: none;
 }
@@ -190,7 +191,6 @@ textarea {
     background-color: white;
     padding: 16px;
     border-radius: 8px;
-    border: 0px #454545 solid;
 }
 
 .active-header {
@@ -204,7 +204,6 @@ textarea {
 .input-error {
     background: transparent;
     justify-content: center;
-    margin-left: 35%;
 }
 
 .people {
@@ -316,6 +315,7 @@ textarea {
 
 .reaction-group {
     display: flex;
+    max-width: 30px;
 }
 
 .reaction-group p {
@@ -342,6 +342,13 @@ textarea {
 /* BREAKPOINT */
 /* BREAKPOINT */
 
+@media (max-width: 999px) {
+    
+    .sidebar {
+        display: none;
+    }
+}
+
 @media (max-width: 899px) {
 
     #main-header nav ul img {
@@ -365,7 +372,7 @@ textarea {
 
 @media (max-width: 699px) {
 
-    #search input {
+    #search {
         display: none;
     }
 
