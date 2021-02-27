@@ -156,5 +156,5 @@ submitButton.addEventListener('click', function(event) {
     outsideDiv.appendChild(reactionDiv);
     timeline.insertBefore(outsideDiv, timeline.firstChild);
 
-    handleFavorite();
+    handleFavoriteInput();
 })

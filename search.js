@@ -35,3 +35,14 @@ const handleFavorite = () => {
         })
     })
 }
+
+const handleFavoriteInput = () => {
+    const favImage = document.querySelector('.btnFavorite');
+    favImage.addEventListener('click', (event) => {
+        let counterDiv = favImage.parentElement.children[1];
+        let counterValue = parseInt(counterDiv.textContent);
+        favImage.classList.contains('toggleOff')
+        ? (favImage.classList.remove('toggleOff'), favImage.src= 'images/Favorite.svg', counterDiv.textContent = --counterValue)
+        : (favImage.classList.add('toggleOff'), favImage.src = 'images/Favorite_full.svg', counterDiv.textContent = ++counterValue);
+    })
+}
