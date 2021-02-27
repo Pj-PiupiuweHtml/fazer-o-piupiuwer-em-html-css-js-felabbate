@@ -21,7 +21,7 @@ searchBar.addEventListener('input', function(){
             item.classList.remove('invisible-content');
         })
     }
-})
+});
 
 const handleFavorite = () => {
     const favImage = document.querySelectorAll('.btnFavorite');
@@ -32,8 +32,8 @@ const handleFavorite = () => {
             item.classList.contains('toggleOff')
             ? (item.classList.remove('toggleOff'), item.src= 'images/Favorite.svg', counterDiv.textContent = --counterValue)
             : (item.classList.add('toggleOff'), item.src = 'images/Favorite_full.svg', counterDiv.textContent = ++counterValue);
-        })
-    })
+        });
+    });
 }
 
 const handleFavoriteInput = () => {
@@ -44,5 +44,16 @@ const handleFavoriteInput = () => {
         favImage.classList.contains('toggleOff')
         ? (favImage.classList.remove('toggleOff'), favImage.src= 'images/Favorite.svg', counterDiv.textContent = --counterValue)
         : (favImage.classList.add('toggleOff'), favImage.src = 'images/Favorite_full.svg', counterDiv.textContent = ++counterValue);
-    })
+    });
 }
+
+const inputTextArea = document.querySelector('#piu-input-textarea');
+const characRemaining = document.querySelector('.character-counting');
+const maxCharac = 140;
+
+inputTextArea.addEventListener('input', () => {
+    let characCount = inputTextArea.value.length;
+    (characCount > maxCharac) && characRemaining.classList.add('error-message');
+    (characCount <= maxCharac) && characRemaining.classList.remove('error-message');
+    characRemaining.textContent = `${characCount}/${maxCharac}`;
+});

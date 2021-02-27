@@ -109,14 +109,17 @@
                     <form action="feed.html" class="form-piu">
                         <div id="avatar-input">
                             <img src="/images/fotousuario.jpeg" alt="Sua foto de perfil" class="profile-picture-feed user-profile-picture" />
-                            <textarea name="userPiu" maxlength="500" placeholder="O que você tem em mente?"></textarea>
+                            <textarea id="piu-input-textarea" name="userPiu" maxlength="500" placeholder="O que você tem em mente?"></textarea>
+                        </div>
+                        <div class="character-remaining">
+                            <span class="character-counting">0/140</span>
                         </div>
                         <div id="input-buttons">
                             <div id="piu-input-extras">
                                 <img src="/images/Pin.svg" alt="Botão de localização" />
                                 <img src="/images/Camera.svg" alt="Botão de fotos" />
                             </div>
-                            <div class="error-card">
+                            <div>
                                 <span class="error-message"></span>
                             </div>
                             <button class="follow submit-piu">Solte o Piu</button>
@@ -168,6 +171,6 @@
         </section>
         <script src="main.js"></script>
         <script src="form.js"></script>
-        <script src="search.js"></script>
+        <script src="listeners.js"></script>
     </body>
 </html>
