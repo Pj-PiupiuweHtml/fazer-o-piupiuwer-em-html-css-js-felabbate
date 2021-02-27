@@ -111,7 +111,7 @@ submitButton.addEventListener('click', function(event) {
     reactionGroupDiv.appendChild(likeButton);
 
     const likeNum = document.createElement('p');
-    likeNum.textContent = parseInt(10*Math.random());
+    likeNum.textContent = '0';
     likeNum.classList.add('favorite-counter');
     reactionGroupDiv.appendChild(likeNum);
     reactionDiv.appendChild(reactionGroupDiv);
@@ -125,7 +125,7 @@ submitButton.addEventListener('click', function(event) {
     reactionGroupDiv2.appendChild(commentButton);
 
     const commentNum = document.createElement('p');
-    commentNum.textContent = 'X';
+    commentNum.textContent = '0';
     reactionGroupDiv2.appendChild(commentNum);
     reactionDiv.appendChild(reactionGroupDiv2);
 
@@ -138,13 +138,14 @@ submitButton.addEventListener('click', function(event) {
     reactionGroupDiv3.appendChild(shareButton);
 
     const shareNum = document.createElement('p');
-    shareNum.textContent = 'X';
+    shareNum.textContent = '0';
     reactionGroupDiv3.appendChild(shareNum);
     reactionDiv.appendChild(reactionGroupDiv3);
 
     const salvarPiu = document.createElement('img');
     salvarPiu.src = 'images/Bookmark.svg';
     salvarPiu.alt = 'Salvar piu';
+    salvarPiu.classList.add('btnBookmark');
     reactionDiv.appendChild(salvarPiu);
 
     const showCom = document.createElement('p');

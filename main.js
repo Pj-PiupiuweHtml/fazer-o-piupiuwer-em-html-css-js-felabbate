@@ -115,6 +115,7 @@ const makeRequest = async(url) => {
             const salvarPiu = document.createElement('img');
             salvarPiu.src = 'images/Bookmark.svg';
             salvarPiu.alt = 'Salvar piu';
+            salvarPiu.classList.add('btnBookmark');
             reactionDiv.appendChild(salvarPiu);
         
             const showCom = document.createElement('p');
@@ -127,6 +128,7 @@ const makeRequest = async(url) => {
             timeline.appendChild(outsideDiv);
         });
         handleFavorite();
+        handleBookmark();
     }
     catch (error) {
         console.log(error);

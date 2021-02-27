@@ -23,11 +23,22 @@ searchBar.addEventListener('input', function(){
     }
 });
 
+const inputTextArea = document.querySelector('#piu-input-textarea');
+const characRemaining = document.querySelector('.character-counting');
+const maxCharac = 140;
+
+inputTextArea.addEventListener('input', () => {
+    let characCount = inputTextArea.value.length;
+    (characCount > maxCharac) && characRemaining.classList.add('error-message');
+    (characCount <= maxCharac) && characRemaining.classList.remove('error-message');
+    characRemaining.textContent = `${characCount}/${maxCharac}`;
+});
+
 const handleFavorite = () => {
     const favImage = document.querySelectorAll('.btnFavorite');
     favImage.forEach((item) => {
         item.addEventListener('click', (event) => {
-            let counterDiv = item.parentElement.children[1];
+            let counterDiv = item.parentNode.children[1];
             let counterValue = parseInt(counterDiv.textContent);
             item.classList.contains('toggleOff')
             ? (item.classList.remove('toggleOff'), item.src= 'images/Favorite.svg', counterDiv.textContent = --counterValue)
@@ -39,21 +50,29 @@ const handleFavorite = () => {
 const handleFavoriteInput = () => {
     const favImage = document.querySelector('.btnFavorite');
     favImage.addEventListener('click', (event) => {
-        let counterDiv = favImage.parentElement.children[1];
+        let counterDiv = favImage.parentNode.children[1];
         let counterValue = parseInt(counterDiv.textContent);
         favImage.classList.contains('toggleOff')
-        ? (favImage.classList.remove('toggleOff'), favImage.src= 'images/Favorite.svg', counterDiv.textContent = --counterValue)
+        ? (favImage.classList.remove('toggleOff'), favImage.src = 'images/Favorite.svg', counterDiv.textContent = --counterValue)
         : (favImage.classList.add('toggleOff'), favImage.src = 'images/Favorite_full.svg', counterDiv.textContent = ++counterValue);
     });
 }
 
-const inputTextArea = document.querySelector('#piu-input-textarea');
-const characRemaining = document.querySelector('.character-counting');
-const maxCharac = 140;
-
-inputTextArea.addEventListener('input', () => {
-    let characCount = inputTextArea.value.length;
-    (characCount > maxCharac) && characRemaining.classList.add('error-message');
-    (characCount <= maxCharac) && characRemaining.classList.remove('error-message');
-    characRemaining.textContent = `${characCount}/${maxCharac}`;
-});
+const handleBookmark = () => {
+    const bookImage = document.querySelectorAll('.btnBookmark');
+    const feedDiv = document.querySelector('.timeline-content');
+    bookImage.forEach((item) => {
+        item.addEventListener('click', (event) => {
+            let outsideDiv = item.parentNode.parentNode;
+            if (!item.classList.contains('toggleOff')) {
+                item.src = 'images/Bookmark_full.svg';
+                item.classList.add('toggleOff');
+                feedDiv.insertBefore(outsideDiv, feedDiv.firstChild);
+            }
+            else {
+                item.src = 'images/Bookmark.svg';
+                item.classList.remove('toggleOff');
+            }
+        });
+    });
+}
