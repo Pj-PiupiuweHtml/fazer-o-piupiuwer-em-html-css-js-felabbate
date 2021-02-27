@@ -76,3 +76,20 @@ const handleBookmark = () => {
         });
     });
 }
+
+const handleBookmarkInput = () => {
+    const bookImage = document.querySelector('.btnBookmark');
+    const feedDiv = document.querySelector('.timeline-content');
+    bookImage.addEventListener('click', (event) => {
+        let outsideDiv = bookImage.parentNode.parentNode;
+        if (!bookImage.classList.contains('toggleOff')) {
+            bookImage.src = 'images/Bookmark_full.svg';
+            bookImage.classList.add('toggleOff');
+            feedDiv.insertBefore(outsideDiv, feedDiv.firstChild);
+        }
+        else {
+            bookImage.src = 'images/Bookmark.svg';
+            bookImage.classList.remove('toggleOff');
+        }
+    });
+}

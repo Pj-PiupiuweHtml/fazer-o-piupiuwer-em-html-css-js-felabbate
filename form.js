@@ -158,4 +158,5 @@ submitButton.addEventListener('click', function(event) {
     timeline.insertBefore(outsideDiv, timeline.firstChild);
 
     handleFavoriteInput();
+    handleBookmarkInput();
 })
