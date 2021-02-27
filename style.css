@@ -311,7 +311,7 @@ textarea {
 .piu-reaction-bar {
     display: flex;
     justify-content: space-around;
-    margin: 32px 40px 0 40px;
+    margin: 32px 1% 0 1%;
 }
 
 .reaction-group {
