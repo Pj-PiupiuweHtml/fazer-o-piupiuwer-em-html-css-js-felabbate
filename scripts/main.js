@@ -17,8 +17,8 @@ const makeRequest = async(url) => {
             infoDiv.classList.add("piu-poster-info");
 
             const profilePicture = document.createElement("img");
-            item.imagem ? (profilePicture.src = item.imagem) : (profilePicture.src = "images/avatar.svg");
-            profilePicture.alt = "Foto de Perfil";
+            item.imagem ? (profilePicture.src = item.imagem) : (profilePicture.src="images/avatar.svg");
+            profilePicture.alt="Foto de Perfil";
             profilePicture.classList.add("profile-picture-feed");
             infoDiv.appendChild(profilePicture);
 
@@ -46,7 +46,7 @@ const makeRequest = async(url) => {
 
             /* const comP = document.createElement("p");                GAMBIARRA: tem que arrumar o espaçamento para ficar o mesmo em todos os pius
             comP.classList.add("generic-username");
-            comP.textContent = "(comunidade)";
+            comP.textContent="(comunidade)";
             topDetailsDiv.appendChild(comP); */
 
             const timeP = document.createElement("p");
@@ -75,8 +75,8 @@ const makeRequest = async(url) => {
             reactionGroupDiv.classList.add("reaction-group");
         
             const likeButton = document.createElement("img");
-            likeButton.src = "images/Favorite.svg";
-            likeButton.alt = "Curtir";
+            likeButton.src="images/Favorite.svg";
+            likeButton.alt="Curtir";
             likeButton.classList.add("btnFavorite");
             reactionGroupDiv.appendChild(likeButton);
         
@@ -90,8 +90,8 @@ const makeRequest = async(url) => {
             reactionGroupDiv2.classList.add("reaction-group");
         
             const commentButton = document.createElement("img");
-            commentButton.src = "images/Chat_alt_add.svg";
-            commentButton.alt = "Adicionar comentário";
+            commentButton.src="images/Chat_alt_add.svg";
+            commentButton.alt="Adicionar comentário";
             reactionGroupDiv2.appendChild(commentButton);
         
             const commentNum = document.createElement("p");
@@ -103,8 +103,8 @@ const makeRequest = async(url) => {
             reactionGroupDiv3.classList.add("reaction-group");
         
             const shareButton = document.createElement("img");
-            shareButton.src = "images/Regroup.svg";
-            shareButton.alt = "Repiuwpar";
+            shareButton.src="images/Regroup.svg";
+            shareButton.alt="Repiuwpar";
             reactionGroupDiv3.appendChild(shareButton);
         
             const shareNum = document.createElement("p");
@@ -113,14 +113,14 @@ const makeRequest = async(url) => {
             reactionDiv.appendChild(reactionGroupDiv3);
         
             const salvarPiu = document.createElement("img");
-            salvarPiu.src = "images/Bookmark.svg";
-            salvarPiu.alt = "Salvar piu";
+            salvarPiu.src="images/Bookmark.svg";
+            salvarPiu.alt="Salvar piu";
             salvarPiu.classList.add("btnBookmark");
             reactionDiv.appendChild(salvarPiu);
         
             const showCom = document.createElement("p");
             showCom.classList.add("reaction-text");
-            showCom.textContent = "Mostrar Conversa";
+            showCom.textContent="Mostrar Conversa";
             reactionDiv.appendChild(showCom);
 
             outsideDiv.appendChild(infoDiv);

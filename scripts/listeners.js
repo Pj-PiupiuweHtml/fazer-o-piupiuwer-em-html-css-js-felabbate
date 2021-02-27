@@ -41,8 +41,8 @@ const handleFavorite = () => {
             let counterDiv = item.parentNode.children[1];
             let counterValue = parseInt(counterDiv.textContent);
             item.classList.contains("toggleOff")
-            ? (item.classList.remove("toggleOff"), item.src= "images/Favorite.svg", counterDiv.textContent = --counterValue)
-            : (item.classList.add("toggleOff"), item.src = "images/Favorite_full.svg", counterDiv.textContent = ++counterValue);
+            ? (item.classList.remove("toggleOff"), item.src="images/Favorite.svg", counterDiv.textContent = --counterValue)
+            : (item.classList.add("toggleOff"), item.src="images/Favorite_full.svg", counterDiv.textContent = ++counterValue);
         });
     });
 }
@@ -53,8 +53,8 @@ const handleFavoriteInput = () => {
         let counterDiv = favImage.parentNode.children[1];
         let counterValue = parseInt(counterDiv.textContent);
         favImage.classList.contains("toggleOff")
-        ? (favImage.classList.remove("toggleOff"), favImage.src = "images/Favorite.svg", counterDiv.textContent = --counterValue)
-        : (favImage.classList.add("toggleOff"), favImage.src = "images/Favorite_full.svg", counterDiv.textContent = ++counterValue);
+        ? (favImage.classList.remove("toggleOff"), favImage.src="images/Favorite.svg", counterDiv.textContent = --counterValue)
+        : (favImage.classList.add("toggleOff"), favImage.src="images/Favorite_full.svg", counterDiv.textContent = ++counterValue);
     });
 }
 
@@ -65,12 +65,12 @@ const handleBookmark = () => {
         item.addEventListener("click", (event) => {
             let outsideDiv = item.parentNode.parentNode;
             if (!item.classList.contains("toggleOff")) {
-                item.src = "images/Bookmark_full.svg";
+                item.src="images/Bookmark_full.svg";
                 item.classList.add("toggleOff");
                 feedDiv.insertBefore(outsideDiv, feedDiv.firstChild);
             }
             else {
-                item.src = "images/Bookmark.svg";
+                item.src="images/Bookmark.svg";
                 item.classList.remove("toggleOff");
             }
         });
@@ -83,12 +83,12 @@ const handleBookmarkInput = () => {
     bookImage.addEventListener("click", (event) => {
         let outsideDiv = bookImage.parentNode.parentNode;
         if (!bookImage.classList.contains("toggleOff")) {
-            bookImage.src = "images/Bookmark_full.svg";
+            bookImage.src="images/Bookmark_full.svg";
             bookImage.classList.add("toggleOff");
             feedDiv.insertBefore(outsideDiv, feedDiv.firstChild);
         }
         else {
-            bookImage.src = "images/Bookmark.svg";
+            bookImage.src="images/Bookmark.svg";
             bookImage.classList.remove("toggleOff");
         }
     });

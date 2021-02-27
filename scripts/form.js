@@ -35,7 +35,7 @@ submitButton.addEventListener("click", function(event) {
     }
 
     errorMessageSpan.classList.remove("card");
-    errorMessageSpan.textContent = "";
+    errorMessageSpan.textContent="";
 
     const timeline = document.querySelector(".timeline-content");
             
@@ -48,7 +48,7 @@ submitButton.addEventListener("click", function(event) {
     const profilePicture = document.createElement("img");
     const pictureLink = document.querySelector(".user-profile-picture")
     profilePicture.src = pictureLink.src;
-    profilePicture.alt = "Foto de Perfil";
+    profilePicture.alt="Foto de Perfil";
     profilePicture.classList.add("profile-picture-feed");
     infoDiv.appendChild(profilePicture);
 
@@ -64,24 +64,24 @@ submitButton.addEventListener("click", function(event) {
     const nomeP = document.createElement("p");
     nomeP.classList.add("generic-name");
     nomeP.classList.add("name-piu-feed");
-    nomeP.textContent = "Fernando Labbate";
+    nomeP.textContent="Fernando Labbate";
     nameUserDiv.appendChild(nomeP);
 
     const userP = document.createElement("p");
     userP.classList.add("generic-username");
     userP.classList.add("username-piu-feed");
-    userP.textContent = "@Felabbate";
+    userP.textContent="@Felabbate";
     nameUserDiv.appendChild(userP);
     topDetailsDiv.appendChild(nameUserDiv);
 
     /* const comP = document.createElement("p");                GAMBIARRA: tem que arrumar o espaçamento para ficar o mesmo em todos os pius
     comP.classList.add("generic-username");
-    comP.textContent = "(comunidade)";
+    comP.textContent="(comunidade)";
     topDetailsDiv.appendChild(comP); */
 
     const timeP = document.createElement("p");
     timeP.classList.add("generic-username");
-    timeP.textContent = "1 s";
+    timeP.textContent="1 s";
     topDetailsDiv.appendChild(timeP);
 
     const contentDiv = document.createElement("div");
@@ -105,13 +105,13 @@ submitButton.addEventListener("click", function(event) {
     reactionGroupDiv.classList.add("reaction-group");
 
     const likeButton = document.createElement("img");
-    likeButton.src = "images/Favorite.svg";
-    likeButton.alt = "Curtir";
+    likeButton.src="images/Favorite.svg";
+    likeButton.alt="Curtir";
     likeButton.classList.add("btnFavorite");
     reactionGroupDiv.appendChild(likeButton);
 
     const likeNum = document.createElement("p");
-    likeNum.textContent = "0";
+    likeNum.textContent="0";
     likeNum.classList.add("favorite-counter");
     reactionGroupDiv.appendChild(likeNum);
     reactionDiv.appendChild(reactionGroupDiv);
@@ -120,12 +120,12 @@ submitButton.addEventListener("click", function(event) {
     reactionGroupDiv2.classList.add("reaction-group");
 
     const commentButton = document.createElement("img");
-    commentButton.src = "images/Chat_alt_add.svg";
-    commentButton.alt = "Adicionar comentário";
+    commentButton.src="images/Chat_alt_add.svg";
+    commentButton.alt="Adicionar comentário";
     reactionGroupDiv2.appendChild(commentButton);
 
     const commentNum = document.createElement("p");
-    commentNum.textContent = "0";
+    commentNum.textContent="0";
     reactionGroupDiv2.appendChild(commentNum);
     reactionDiv.appendChild(reactionGroupDiv2);
 
@@ -133,24 +133,24 @@ submitButton.addEventListener("click", function(event) {
     reactionGroupDiv3.classList.add("reaction-group");
 
     const shareButton = document.createElement("img");
-    shareButton.src = "images/Regroup.svg";
-    shareButton.alt = "Repiuwpar";
+    shareButton.src="images/Regroup.svg";
+    shareButton.alt="Repiuwpar";
     reactionGroupDiv3.appendChild(shareButton);
 
     const shareNum = document.createElement("p");
-    shareNum.textContent = "0";
+    shareNum.textContent="0";
     reactionGroupDiv3.appendChild(shareNum);
     reactionDiv.appendChild(reactionGroupDiv3);
 
     const salvarPiu = document.createElement("img");
-    salvarPiu.src = "images/Bookmark.svg";
-    salvarPiu.alt = "Salvar piu";
+    salvarPiu.src="images/Bookmark.svg";
+    salvarPiu.alt="Salvar piu";
     salvarPiu.classList.add("btnBookmark");
     reactionDiv.appendChild(salvarPiu);
 
     const showCom = document.createElement("p");
     showCom.classList.add("reaction-text");
-    showCom.textContent = "Mostrar Conversa";
+    showCom.textContent="Mostrar Conversa";
     reactionDiv.appendChild(showCom);
 
     outsideDiv.appendChild(infoDiv);
