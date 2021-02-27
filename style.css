@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: #e5e5e5;
     font-family: 'Lato', sans-serif;
     text-rendering: optimizeLegibility;
     max-width: 100vw;
@@ -175,7 +175,7 @@ img {
     background-color: white;
     padding: 16px;
     border-radius: 8px;
-    border: 1px #454545 solid;
+    border: 0px #454545 solid;
 }
 
 .active-header {
@@ -258,8 +258,8 @@ img {
 }
 
 .piu-content-outside {  /* GAMBIARRA: achar um jeito melhor pra fazer a divisoria entre pius */
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     margin-bottom: 16px;
     padding-bottom: 16px;
     border-bottom: #454545 thin solid;

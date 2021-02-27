@@ -27,3 +27,28 @@ searchBar.addEventListener('input', function(){
         console.log(this.value);
     }
 }) */
+
+const searchBar = document.querySelector('.search-input');
+
+searchBar.addEventListener('input', function(){
+    const contentUser = document.querySelectorAll('.piu-content-outside');
+    if(searchBar.value.length > 0) {
+        for (let i = 0; i < contentUser.length; i++) {
+        let userPiu = contentUser[i];
+
+        let name = userPiu.querySelector('.piu-name-username');
+        let text = name.textContent;
+
+        let expression = new RegExp(searchBar.value,'i');
+        if (!expression.test(text)) {
+            userPiu.classList.add('invisible-content');
+        }
+        else {
+            userPiu.classList.remove('invisible-content');
+        }}
+    } else {
+        contentUser.forEach((item) => {
+            item.classList.remove('invisible-content');
+        })
+    }
+})
