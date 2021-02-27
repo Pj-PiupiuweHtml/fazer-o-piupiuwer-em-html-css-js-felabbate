@@ -356,6 +356,11 @@ textarea {
     .sidebar {
         display: none;
     }
+
+    .feed {
+        flex: 1;
+        margin-left: 0px;
+    }
 }
 
 @media (max-width: 699px) {
@@ -369,5 +374,9 @@ textarea {
         max-width: 100vw;
         height: 64px;
         background-color: #571228;
+    }
+
+    #input-buttons button {
+        width: 28%;
     }
 }
