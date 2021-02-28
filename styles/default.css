@@ -43,7 +43,6 @@ textarea {
 }
 
 #main-header nav ul {
-    border: 1px black solid;
     display: flex;
     list-style: none;
 }
@@ -368,6 +367,10 @@ textarea {
         flex: 1;
         margin-left: 0px;
     }
+
+    .input-error {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 699px) {
@@ -385,5 +388,9 @@ textarea {
 
     #input-buttons button {
         width: 28%;
+    }
+
+    .input-error {
+        display: none;
     }
 }
